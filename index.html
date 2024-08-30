@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora de parcela de emprestimo</title>
+</head>
+
+<body>
+    <div>
+        <h1>calculadora de parcela de emprestimo</h1>
+        <br>
+        <label for="">valor emprestimo</label>
+        <input type="number" name="ve" id="ve" min="0">
+        <br>
+        <label for="">taxa de juros</label>
+        <input type="number" name="tj" id="tj" min="0">
+        <br>
+        <label for="">quantidade de parcelas</label>
+        <input type="number" name="qp" id="qp" min="0" max="12">
+        <br>
+        <button onclick="calcular()">calcular</button>
+        <button onclick="limpar()">limpar</button>
+        <br>
+        <label for="">valor da parcela:</label>
+        <span id="vp">0</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
